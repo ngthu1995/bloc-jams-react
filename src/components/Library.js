@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Landing = () => (
-  <section className="landing">
+const Library = () => (
+  <section className="library">
     Landing page will go here
   </section>
 );
 
-export default Landing;
+export default Library;
