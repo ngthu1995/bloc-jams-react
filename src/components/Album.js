@@ -61,7 +61,7 @@ class Album extends Component {
       if (this.state.isHovering && song === this.state.currentSong) {
         return className = "icon ion-md-play";
       }
-      if(this.state.isPlaying) {
+      if(this.state.isPlaying && song === this.state.currentSong) {
         return className = "icon ion-md-pause";
       }
     }
