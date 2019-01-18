@@ -57,7 +57,8 @@ class Album extends Component {
 
     displayIcon(song) {
       let className = "song-number";
-      if (this.state.isHovering) {
+      console.log(song, this.state.currentSong)
+      if (this.state.isHovering && song === this.state.currentSong) {
         return className = "icon ion-md-play";
       }
       if(this.state.isPlaying) {
@@ -88,7 +89,7 @@ class Album extends Component {
                   onMouseLeave={ () => this.handleSongLeave(song) } >
                   <td >
                     <button>
-                      <span className= {this.displayIcon()} > {index + 1} </span>
+                      <span className= {this.displayIcon(song)} > {index + 1} </span>
                       </button>
                   </td>
                   <td>{song.title}</td>
