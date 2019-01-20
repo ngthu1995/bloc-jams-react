@@ -34,7 +34,7 @@ class Album extends Component {
         this.setState({ duration: this.audioElement.duration });
       },
       volumeChange: e => {
-        this.setState({ currentVolume: this.audioElement.currentVolume});
+        this.setState({ currentVolume: this.audioElement.volume});
       }
     };
     this.audioElement.addEventListener('timeupdate', this.eventListeners.timeUpdate);
@@ -86,7 +86,6 @@ class Album extends Component {
 
   displayIcon(song) {
     let className = "";
-    // console.log(song, this.state.currentSong)
     if (this.state.isHovering && song === this.state.currentSong) {
       return className = "icon ion-md-play";
     }
@@ -119,8 +118,19 @@ class Album extends Component {
 
   handleVolumeChange(e) {
     const newVolume = e.target.value;
-    this.audioElement.currentVolume = newVolume;
+    this.audioElement.volume = newVolume;
     this.setState({ currentVolume: newVolume });
+  }
+
+  formatTime(totalSeconds) {
+    if (isNaN(totalSeconds)) {
+      return "-:--";
+    } else {
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds= totalSeconds % 60;
+      const wholeSecond = Math.floor(seconds)
+      return ( minutes + ":" + wholeSecond );
+    }
   }
 
     render() {
@@ -166,6 +176,7 @@ class Album extends Component {
             handleNextClick={() => this.handleNextClick()}
             handleTimeChange={(e) => this.handleTimeChange(e)} 
             handleVolumeChange={(e) => this.handleVolumeChange(e)}
+            formatTime={(e) => this.formatTime(e)}
          />
         </section>
       );
