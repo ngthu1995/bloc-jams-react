@@ -1,0 +1,64 @@
+.container-title {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 5px 5px 10px #181818;
+}
+
+.container {
+    background-image: url(./img/landingpage.jpg);
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selling-points {
+    display: flex;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.selling-points-left {
+    width: 50%; 
+    height: 50%;
+    padding: 2rem!important;
+}
+
+.selling-points-right {
+    text-align: left;
+    padding: 2rem!important;
+}
+
+.point {
+    padding-bottom: 0.5rem;
+}
+
+.point-title {
+    font-size: 1.25rem;
+}
+
+.title {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .selling-points {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .selling-points-left {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+}
