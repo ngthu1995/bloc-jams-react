@@ -1,0 +1,165 @@
+.album {
+    background-color: #680AE2;
+    color: white; 
+    background-size: cover;
+    width: 100%;
+}
+
+.album-bg {
+    opacity: .06;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;   
+}
+
+#album-info {
+    max-width: 1125px;
+    margin: 0 auto;
+}
+
+#album-cover-art {
+    max-width: 60%;
+}
+
+#empty-space {
+    height: 4rem;;
+}
+
+#album-title {
+    font-size: 1.25rem;
+}
+
+.artist {
+    font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .album {
+        padding: 3rem 0;    
+    }
+
+       #empty-space {
+        height: 2rem;;
+    }
+
+    #album-cover-art {
+        width: 70%;;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    #song-list {
+        position: static!important;
+        margin: 2rem auto;
+    }
+}
+
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding: 1rem;
+    background-color: #680AE2;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+#time-control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-time, .total-time {
+    margin: 0 1rem;
+}
+
+#volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.seek-bar {
+    width: 100%;
+    height: 0.25rem;
+}
+
+#wrap-container, #buttons, #volume-control {
+    width: 30%;
+    flex: 1 0.5 10em;
+}
+
+.icon {
+    margin: 0 1rem;
+}
+
+.ion-md-volume-high {
+    padding: 0 1rem;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    background: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+button:focus {
+    background: none;
+}
+
+button:active{
+    outline: none;
+    border: none;
+}
+
+.volume {
+    display: none;   
+}
+
+#volume-control:hover .volume {
+    display: inline-block;
+}
+
+#number {
+    font-size: 1rem;
+}
+
+
+#song-list {
+    position: absolute;
+    top: 125px;
+    padding: 0 10px;
+}
+
+table {
+    border-collapse: collapse; 
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+tr td {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-align: left;
+}
+
+#song-duration, #song-title {
+    padding: 1rem 2rem;
+    margin: 0;
+}
