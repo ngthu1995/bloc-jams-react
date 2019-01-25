@@ -1,16 +1,69 @@
 .library {
+    background-color: #680AE2;
     width: 100%;
-    max-width: 1140px;
-    height: 800px;
-    padding: 2rem 0;;
-    margin-right: auto;
-    margin-left: auto;
+    height: 900px;
+    margin: auto;
+    color: white;
 }
 
 .row {
+    margin: 4rem auto;
     display: flex;
-    margin: 0 15px;
-    justify-content: space-between;
+    max-width: 1140px;
 }
 
+.column {
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 5px 55px rgba( 0, 0 , 0, .4);
+}
 
+.column-title {
+    font-size: 1.1rem;
+    color: rgb(44, 44, 44);
+}
+
+.column-artist {
+    font-size: 0.95rem;
+    padding: 10px 0;
+}
+
+.column-info {
+    height: 115px;
+    width: 100%;
+    position: absolute;
+    padding: 1rem;
+    bottom:0;
+    background: rgb(255, 255, 255);opacity:0.77;
+    transform: translateY(35px);
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+  }
+
+  #column-cover {
+    bottom: 100px;
+    left: -50px;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 950px) {
+    .library {
+        height: 800px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+
+    .column {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 300px;
+    }
+  }

@@ -2,14 +2,14 @@
     background-color: #680AE2;
     color: white; 
     background-size: cover;
-    width: 100%;
+    background-position: center;
+    height: 100%;
+    background-blend-mode: lighten;
 }
 
-.album-bg {
-    opacity: .06;
-    background-size: cover;
-    background-position: center;
-    padding: 5rem;   
+.bg {
+    background-color: #680AE2;
+    height: 100%;;
 }
 
 #album-info {
@@ -22,7 +22,7 @@
 }
 
 #empty-space {
-    height: 4rem;;
+    height: 10rem;;
 }
 
 #album-title {
@@ -48,6 +48,16 @@
 
     button {
         padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .wrap-container {
+        display: none;
+    }
+
+    #buttons, #volume-control {
+        width: 100%!important;
+        padding: 0!important;
     }
 }
 
@@ -63,7 +73,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
     padding: 1rem;
     background-color: #680AE2;
     z-index: 100;
@@ -97,7 +106,6 @@
 
 #wrap-container, #buttons, #volume-control {
     width: 30%;
-    flex: 1 0.5 10em;
 }
 
 .icon {
@@ -146,11 +154,12 @@ button:active{
     position: absolute;
     top: 125px;
     padding: 0 10px;
+    left: 80px;
 }
 
 table {
     border-collapse: collapse; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Questrial', sans-serif;
     cursor: pointer;
 }
 
