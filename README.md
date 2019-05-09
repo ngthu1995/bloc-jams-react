@@ -32,7 +32,7 @@ Understanding of React.js
 1. Clone the repo to your local machine \
    `$ git clone https://github.com/ngthu1995/bloc-jams-react`
 
-2. Install dependencies
+2. Install dependencies \
    `$ npm install`
 
 3. Start server: \
