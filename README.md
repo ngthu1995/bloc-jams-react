@@ -42,7 +42,7 @@ Understanding of React.js
 
 ## Deployment
 
-The site is deployed with Heroku.
+The site is deployed with Github.
 
 ## Built With
 
