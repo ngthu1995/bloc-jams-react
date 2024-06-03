@@ -1,7 +1,7 @@
 {
   "main.css": "/bloc-jams-react/static/css/main.d67b7379.chunk.css",
-  "main.js": "/bloc-jams-react/static/js/main.93d0b0af.chunk.js",
-  "main.js.map": "/bloc-jams-react/static/js/main.93d0b0af.chunk.js.map",
+  "main.js": "/bloc-jams-react/static/js/main.98230680.chunk.js",
+  "main.js.map": "/bloc-jams-react/static/js/main.98230680.chunk.js.map",
   "static/js/1.4e428cb3.chunk.js": "/bloc-jams-react/static/js/1.4e428cb3.chunk.js",
   "static/js/1.4e428cb3.chunk.js.map": "/bloc-jams-react/static/js/1.4e428cb3.chunk.js.map",
   "runtime~main.js": "/bloc-jams-react/static/js/runtime~main.8532c21b.js",
@@ -11,6 +11,6 @@
   "static/media/landing.css": "/bloc-jams-react/static/media/landingpage.244bd765.jpg",
   "static/css/main.d67b7379.chunk.css.map": "/bloc-jams-react/static/css/main.d67b7379.chunk.css.map",
   "index.html": "/bloc-jams-react/index.html",
-  "precache-manifest.04207a4911cc48d1c1bb08cf088f696e.js": "/bloc-jams-react/precache-manifest.04207a4911cc48d1c1bb08cf088f696e.js",
+  "precache-manifest.c72761db969c81c6d8200bce870bc8d3.js": "/bloc-jams-react/precache-manifest.c72761db969c81c6d8200bce870bc8d3.js",
   "service-worker.js": "/bloc-jams-react/service-worker.js"
 }

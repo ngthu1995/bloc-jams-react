@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "93d0b0afb1554fd71681",
+    "revision": "9823068091d800c3f3a7",
     "url": "/bloc-jams-react/static/css/main.d67b7379.chunk.css"
   },
   {
-    "revision": "93d0b0afb1554fd71681",
-    "url": "/bloc-jams-react/static/js/main.93d0b0af.chunk.js"
+    "revision": "9823068091d800c3f3a7",
+    "url": "/bloc-jams-react/static/js/main.98230680.chunk.js"
   },
   {
     "revision": "4e428cb3038d57c0c97b",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/bloc-jams-react/static/media/landingpage.244bd765.jpg"
   },
   {
-    "revision": "dd50049fe13827b20f7fbf1ca41cd70d",
+    "revision": "56ec32e86bec38e30098c2c3bdce543c",
     "url": "/bloc-jams-react/index.html"
   }
 ];
